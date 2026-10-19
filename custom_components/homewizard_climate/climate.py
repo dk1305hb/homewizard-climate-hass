@@ -148,7 +148,7 @@ class HomeWizardClimateEntity(ClimateEntity):
                 return PRESET_ECO
             elif mode == "high":
                 return PRESET_BOOST
-        raise NotImplementedError()
+        return None
 
     @property
     def preset_modes(self):
